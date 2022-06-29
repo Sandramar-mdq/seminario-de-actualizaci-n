@@ -1,0 +1,5 @@
+id_action,action_name,action_descrip
+11,alta,"inscribir usuario"
+12,baja,"eliminar usuario"
+13,modificacion,"corregir datos de susario"
+14,"listar usuarios","mostrar informacion"
