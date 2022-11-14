@@ -11,7 +11,7 @@ class View extends HTMLElement
 
         this.username1= document.createElement('h2');
         this.username1.id = 'Usuario';
-        this.username1.innerText = 'Username'
+        this.username1.innerText = 'Usuario'
 
         this.usernameInput = document.createElement('input');
         this.usernameInput.className = 'Inputuser';

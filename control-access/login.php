@@ -14,9 +14,9 @@ try
 	//Todo tipo de validación de información, debe ser realizada aquí de manera obligatoria
 	//ANTES de enviar el comando SQL al motor de base de datos.
 
-	$SQLStatement = $connection->prepare("CALL `validateUser`(:username, :password)");
-	$SQLStatement->bindParam( ':username', $username );
-	$SQLStatement->bindParam( ':password', $password );
+	$SQLStatement = $connection->prepare("CALL `validate_User`(:user_name, :user_pass)");
+	$SQLStatement->bindParam( ':user_name', $user_name );
+	$SQLStatement->bindParam( ':user_pass', $user_pass );
 	$SQLStatement->execute();
 
 	$status = array( status=>'ok', description=>'Usuario Conectado Exitosamente!' );

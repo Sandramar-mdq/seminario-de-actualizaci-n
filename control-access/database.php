@@ -5,7 +5,7 @@ $connection = null;
 
 try
 {
-    $connection = new PDO('mysql:host=127.0.0.1;dbname=seminario_de_actualizacion', 'root', 'root');
+    $connection = new PDO('mysql:host=127.0.0.1;dbname=control-access-yop2', 'root', 'tumadre');
     $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
 }
